@@ -1,0 +1,132 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+    %link{href: 'bower_components/bootstrap/dist/css/bootstrap.min.css', :rel => "stylesheet"}
+    %link{href: 'bower_components/flexboxgrid/css/flexboxgrid.min.css', :rel => "stylesheet"}
+    %link{href: 'css/main.css', :rel => "stylesheet"}
+    %title Homework 14
+  %body
+    %header
+      %nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            %ul.nav.nav-bar.header-nav.row.between-xs
+              %li.dropdown-nav.pull-left
+                .dropdown.navbar-right.dropdown-padding
+                  .btn.btn-link.dropdown-toggle#dropdownMenu1{:data => {:toggle => "dropdown"}, :aria => {:haspopup => "true", :expanded => "true"}}
+                    %button.dropdown.navbar-right.circle-shadow
+                      %span.sr-only Toggle navigation
+                      %span.icon-bar
+                      %span.icon-bar
+                      %span.icon-bar
+                  %ul.dropdown-menu.dropdown-menu-left{:aria => {:labelledby => "dropdownMenu1"}}
+                    %li
+                      %a{href: "#"} Home
+                    %li
+                      %a{href: "#"} About me
+                    %li
+                      %a{href: "#"} Portfolio
+                    %li
+                      %a{href: "#"} Templates
+                    %li
+                      %a{href: "#"} Contacts
+              %li
+                .circle-shadow.logo-circle
+                  .logo
+                    %a.navbar-brand.btn
+                      %span.lgo crios
+                    %p.logo-text free PSD template
+              %li.search
+                .circle-shadow.search-icone
+                  %form.navbar-form{:role => "search"}
+                    .form-group
+                      %label{:for => "search-form"}
+                        %span.glyphicon.glyphicon-search
+                      %input.form-control.hidden-input#search-form{:type  => "text", :placeholder => "Search"}
+    %section.main
+      .welcome
+        .container
+          .main-content
+            .jumbotron
+              %h1.title-text Simple PSD template with cool stuff
+              %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              %a.btn.btn-default.btn-lg.main-btn{href: "#", role: "button"} explore template
+        .container-fluid
+          %img.main-bg{src: "img/main_bg.png"}
+    %section.product-list
+      .container
+        .jumbotron
+          %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          %h2.title-text Lorem ipsum dolor sit amet
+          %ul.list.row.between-xs
+            %li
+              %h4.tower Lorem ipsum dolor sit amet
+              %p.main-text Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+            %li
+              %h4.snowflake Lorem ipsum dolor sit amet
+              %p.main-text Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+            %li
+              %h4.christmas-toy Lorem ipsum dolor sit amet
+              %p.main-text Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+            %li
+              %h4.christmas-bell Lorem ipsum dolor sit amet
+              %p.main-text Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+          %a.btn.btn-default.btn-lg.main-btn{href: "#", role: "button"} check our offer
+    %section.pictures
+      .container-fluid
+        .top-pic.row
+          .img-top
+            %img{src: "img/winter.jpg"}
+          .text-top
+            .jumbotron
+              %h2.title-text Lorem ipsum dolor
+              %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+        .bottom-pic.row
+          .text-bottom
+            .jumbotron
+              %h2.title-text Lorem ipsum dolor
+              %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+          .img-bottom
+            %img{src: "img/wood.jpg"}
+    %section.screens
+      .container
+        .first-screen.row
+          .img.col-xs-12.col-sm-6.row.center-xs
+            %img{src: "img/app-screen1.png"}
+          .text.col-xs-12.col-sm-5
+            .jumbotron
+              %h2.title-text Lorem ipsum dolor
+              %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+        .second-screen.row
+          .text.col-md-offset-1.col-xs-12.col-sm-5
+            .jumbotron
+              %h2.title-text Lorem ipsum dolor
+              %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+          .img.col-xs-12.col-sm-6.row.center-xs
+            %img{src: "img/app-screen2.png"}
+    %section.profile
+      .container-fluid
+        .container.row
+          .img.col-xs-12.col-sm-6.row.center-xs
+            %img{src: "img/Crios_template-photo.jpg"}
+          .text.col-xs-12.col-sm-5
+            .jumbotron
+              %h2.title-text Lorem ipsum dolor
+              %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+            .presentation
+              %p.name John Doe
+              %p.position.main-text CEO at Crios.com
+    %section.footer
+      .container-fluid
+        .jumbotron
+          %p.main-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          %h2.title-text Lorem ipsum dolor sit amet
+          %a.btn.btn-default.btn-lg.main-btn{href: "#", role: "button"} SYMU.CO/FREEBIES
+        %img{src: "img/bottom-bg.jpg"}
+
+
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"}
+    %script{src: "bower_components/bootstrap/dist/js/bootstrap.min.js"}

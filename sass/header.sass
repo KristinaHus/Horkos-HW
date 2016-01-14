@@ -1,0 +1,60 @@
+@import "variable"
+
+.navbar
+  background: transparent
+  border: none
+  .navbar-header
+    width: 100%
+    .header-nav
+      height: 225px
+      .dropdown-nav
+        align-self: flex-start
+  button.circle-shadow
+    width: 60px
+    height: 60px
+    background: transparent
+    border: none
+  .navbar-brand
+    font-size: 48px
+    font-weight: 400
+    color: $primary-color
+    text-transform: uppercase
+  .logo-circle
+    width: 415px
+    height: 415px
+    transform: translate(0, -50%)
+    position: relative
+    .logo
+      +flex-col()
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 20%
+      left: 0
+      right: 0
+      margin: auto
+      text-transform: uppercase
+    .logo-text
+      padding-top: 10px
+      font-size: 18px
+      font-weight: 700
+      color: $secondary-color
+      text-transform: uppercase
+      opacity: 0.55
+  .search
+    padding-top: 6px
+  .search-icone
+    display: flex
+    padding-top: 6px
+  .hidden-input
+    display: none
+  .navbar-form
+    margin: auto
+  label
+    font-size: 21px
+    margin: auto
+  .dropdown-padding, .search
+    padding-top: 50px
+
+
+

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700')
+
+@import "reset"
+@import "variable"
+@import "mixin"
+@import "defoult-classes"
+@import "header"
+
+.main
+  position: relative
+  margin-top: 6%
+  .jumbotron
+    position: relative
+    z-index: 2
+    .title-text
+      font-size: 48px
+    .main-text
+      font-size: 18px
+      margin: 30px 0 0 0
+  .main-bg
+    width: 100%
+  .container-fluid
+    position: relative
+    top: -300px
+
+.product-list
+  margin-bottom: -500px
+  position: relative
+  top: -500px
+  z-index: 3
+  .jumbotron
+    padding: 0
+    p
+      font-size: 18px
+  .list
+    margin-top: 8%
+    li
+      flex-basis: 22%
+      +flex-col()
+      .tower:before,
+      .snowflake:before,
+      .christmas-toy:before,
+      .christmas-bell:before
+        content: " "
+        display: flex
+        margin: 0 auto 30px auto
+      .tower:before
+        background: url("../img/tower.svg") no-repeat
+        height: 50px
+        width: 47px
+      .snowflake:before
+        background: url("../img/snowflake.svg") no-repeat
+        width: 48px
+        height: 48px
+      .christmas-toy:before
+        background: url("../img/christmas-toj.svg") no-repeat
+        width: 46px
+        height: 52px
+      .christmas-bell:before
+        background: url("../img/christmas-bell.svg") no-repeat
+        width: 45px
+        height: 47px
+      .main-text
+        font-size: 14px
+        text-align: center
+        padding-top: 30px
+
+.pictures
+  background: #f7f8fb
+  .img-top, .text-top, .img-bottom, .text-bottom
+    flex-basis: 50%
+  .img-top
+    img
+      width: 100%
+      align-self: flex-end
+  .text-top, .text-bottom
+    .jumbotron
+      margin: 0
+      padding: 12%
+      text-align: left
+      .title-text
+        margin-bottom: 5%
+      .main-text
+        font-size: 16px
+        line-height: 36px
+  .img-bottom
+    img
+      width: 100%
+
+.screens
+  position: relative
+  overflow: hidden
+  .first-screen
+    margin-top: 12%
+    .img
+      img
+        position: relative
+        z-index: 2
+      &:before
+        content: " "
+        background: url("../img/snowflake-bg.svg") no-repeat
+        display: block
+        width: 674px
+        height: 674px
+        position: absolute
+        top: -37%
+        left: -33%
+    .text
+      +flex-col()
+      justify-content: center
+      .jumbotron
+        padding: 0
+        text-align: left
+        .title-text
+          margin-bottom: 5%
+          color: $primary-color
+        .main-text
+          font-size: 16px
+          line-height: 36px
+  .second-screen
+    position: relative
+    margin-top: 8%
+    padding-bottom: 11%
+    &:after
+      content: " "
+      background: url("../img/snowflake2.svg") no-repeat
+      display: block
+      width: 672px
+      height: 788px
+      position: absolute
+      right: -21%
+      bottom: -25%
+    .text
+      +flex-col()
+      justify-content: center
+      .jumbotron
+        padding: 0 5%
+        text-align: left
+        .title-text
+          margin-bottom: 5%
+          color: $primary-color
+        .main-text
+          font-size: 16px
+          line-height: 36px
+    .img
+      img
+        position: relative
+        z-index: 2
+
+.profile
+  background: #f7f8fb
+  .text
+    +flex-col()
+    justify-content: center
+    .jumbotron
+      margin-top: 15%
+      text-align: left
+      padding: 0
+      .title-text
+        color: #fe3254
+        margin-bottom: 5%
+      .main-text
+        font-size: 16px
+        line-height: 36px
+  .img
+    img
+      width: 100%
+      align-self: flex-end
+    &:before
+      content: " "
+      background: url("../img/snowflake-bg-white.svg") no-repeat
+      width: 674px
+      height: 560px
+      display: block
+      position: absolute
+      bottom: -8%
+      left: -2%
+      transform: scale(0.9)
+      opacity: 0.3
+
+.footer
+  .jumbotron
+    margin-top: 5%
+    position: relative
+    z-index: 2
+    p
+      font-size: 18px
+  img
+    width: 100%
+    position: relative
+    top: -300px
+
+
+
+

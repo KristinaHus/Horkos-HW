@@ -117,6 +117,9 @@ li {
   .navbar .dropdown-padding, .navbar .search {
     padding-top: 50px; }
 
+.wrapper {
+  margin-top: 25%; }
+
 .main {
   position: relative;
   margin-top: 6%; }

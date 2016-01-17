@@ -14,8 +14,12 @@
   .jumbotron
     position: relative
     z-index: 2
+    @media (max-width: 960px)
+      top: -100px
     .title-text
       font-size: 48px
+      @media (max-width: 660px)
+        font-size: 36px
     .main-text
       font-size: 18px
       margin: 30px 0 0 0
@@ -30,6 +34,9 @@
   position: relative
   top: -500px
   z-index: 3
+  @media (max-width: 960px)
+    margin-bottom: -300px
+    top: -300px
   .jumbotron
     padding: 0
     p
@@ -37,7 +44,6 @@
   .list
     margin-top: 8%
     li
-      flex-basis: 22%
       +flex-col()
       .tower:before,
       .snowflake:before,
@@ -69,25 +75,36 @@
 
 .pictures
   background: #f7f8fb
-  .img-top, .text-top, .img-bottom, .text-bottom
-    flex-basis: 50%
   .img-top
     img
       width: 100%
       align-self: flex-end
   .text-top, .text-bottom
+    padding: 0
     .jumbotron
       margin: 0
       padding: 12%
       text-align: left
+      @media (max-width: 1024px)
+        padding: 8%
       .title-text
         margin-bottom: 5%
+        @media (max-width: 1400px)
+          font-size: 36px
       .main-text
         font-size: 16px
         line-height: 36px
+        @media (max-width: 1024px)
+          line-height: 28px
   .img-bottom
     img
       width: 100%
+  .img-top, .img-bottom
+    padding: 0
+    @media (max-width: 1024px)
+      +flex-col()
+      justify-content: center
+
 
 .screens
   position: relative
@@ -98,6 +115,9 @@
       img
         position: relative
         z-index: 2
+        @media (max-width: 660px)
+          width: 100%
+          height: 100%
       &:before
         content: " "
         background: url("../img/snowflake-bg.svg") no-repeat
@@ -113,6 +133,8 @@
       .jumbotron
         padding: 0
         text-align: left
+        @media (max-width: 960px)
+          text-align: center
         .title-text
           margin-bottom: 5%
           color: $primary-color
@@ -135,9 +157,13 @@
     .text
       +flex-col()
       justify-content: center
+      position: relative
+      z-index: 2
       .jumbotron
         padding: 0 5%
         text-align: left
+        @media (max-width: 960px)
+          text-align: center
         .title-text
           margin-bottom: 5%
           color: $primary-color
@@ -148,16 +174,23 @@
       img
         position: relative
         z-index: 2
+        @media (max-width: 660px)
+          width: 100%
+          height: 100%
 
 .profile
   background: #f7f8fb
   .text
     +flex-col()
     justify-content: center
+    @media (max-width: 1024px)
+      text-align: center
     .jumbotron
       margin-top: 15%
       text-align: left
       padding: 0
+      @media (max-width: 1024px)
+        text-align: center
       .title-text
         color: #fe3254
         margin-bottom: 5%
@@ -191,6 +224,8 @@
     width: 100%
     position: relative
     top: -300px
+    @media (max-width: 960px)
+      top: -100px
 
 
 
